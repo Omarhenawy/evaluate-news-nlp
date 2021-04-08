@@ -4,10 +4,13 @@ function handleSubmit(event) {
   event.preventDefault();
 
   let formText = document.getElementById("name").value;
+  console.log("::: Form Submitted :::");
+
   // check what text was put into the form field
   if (Client.validURL(formText)) {
-    postData("http://localhost:8081/article", { url: formText });
-    console.log("::: Form Submitted :::").then(function (data) {
+    postData("http://localhost:8081/article", { url: formText }).then(function (
+      data
+    ) {
       document.getElementById("results").innerHTML = `omar ${data.message}`;
     });
   } else {
