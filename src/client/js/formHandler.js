@@ -1,7 +1,8 @@
 import { validURL } from "./urlChecker";
-
+console.log("before handle submit");
 function handleSubmit(event) {
   event.preventDefault();
+  alert("submit");
 
   let formText = document.getElementById("name").value;
   console.log("::: Form Submitted :::");

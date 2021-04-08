@@ -1,3 +1,4 @@
+console.log("valid url");
 function validURL(url) {
   var pattern = new RegExp(
     "^(https?:\\/\\/)?" + // protocol

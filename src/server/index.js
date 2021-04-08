@@ -7,17 +7,21 @@ const app = express();
 const mockAPIResponse = require("./mockAPI.js");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const fetch = require("node-fetch");
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("dist"));
-
+console.log("omar");
 console.log(__dirname);
+
 //API CONFIGURATION
 const baseURL = "https://api.meaningcloud.com/sentiment-2.1?";
 const apiKey = process.env.API_KEY;
 let input = [];
+
 app.get("/", function (req, res) {
   res.sendFile("dist/index.html");
   //res.sendFile(path.resolve("src/client/views/index.html"));
@@ -26,6 +30,8 @@ app.get("/", function (req, res) {
 app.get("/test", function (req, res) {
   res.send(mockAPIResponse);
 });
+
+//post route
 
 app.post("/article", async function (req, res) {
   input = req.body.url;
@@ -37,6 +43,7 @@ app.post("/article", async function (req, res) {
   console.log(data);
   res.send(data);
 });
+
 // designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
   console.log("Example app listening on port 8081!");
