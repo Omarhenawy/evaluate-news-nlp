@@ -13,7 +13,7 @@ install loaders and plugins
 
 ## how to run the project
 
-npm test to run tests
-npm run build-dev to start dev server
-npm run build-prod to build the project
-npm start to run the project
+- `npm test` to run tests
+- `npm run` build-dev to start dev server
+- `npm run` build-prod to build the project
+- `npm start` to run the project
