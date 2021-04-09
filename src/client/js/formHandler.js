@@ -1,14 +1,14 @@
 import { validURL } from "./urlChecker";
 console.log("before handle submit");
+
 function handleSubmit(event) {
   event.preventDefault();
-  alert("submit");
-
   let formText = document.getElementById("name").value;
+
   console.log("::: Form Submitted :::");
 
   // check what text was put into the form field
-  if (Client.validURL(formText)) {
+  if (validURL(formText)) {
     postData("http://localhost:8081/article", { url: formText }).then(function (
       data
     ) {
