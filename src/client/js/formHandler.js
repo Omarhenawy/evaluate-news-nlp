@@ -12,7 +12,7 @@ function handleSubmit(event) {
     postData("http://localhost:8081/article", { url: formText }).then(function (
       data
     ) {
-      document.getElementById("results").innerHTML = `omar ${data.message}`;
+      document.getElementById("results").innerHTML = `omar ${data.text}`;
     });
   } else {
     alert(`the url isn't workking`);
