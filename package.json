@@ -9,8 +9,8 @@
     "build-dev": "webpack-dev-server  --config webpack.dev.js"
   },
   "keywords": [],
-  "author": "PUT_YOUR_NAME_HERE",
-  "description": "PUT_SMALL_DESCRIPTION_HERE",
+  "author": "Omar Henawy",
+  "description": "evalute news nlp",
   "dependencies": {
     "axios": "^0.21.1",
     "babel": "^6.23.0",
