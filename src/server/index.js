@@ -35,8 +35,8 @@ app.get("/test", function (req, res) {
 
 app.post("/article", async function (req, res) {
   input = req.body.url;
-  console.log(`You entered: ${userInput}`);
-  const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`;
+  console.log(`You entered: ${input}`);
+  const apiURL = `${baseURL}key=${apiKey}&url=${input}&lang=en`;
 
   const response = await fetch(apiURL);
   const data = await response.json();
