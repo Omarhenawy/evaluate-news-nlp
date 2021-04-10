@@ -12,7 +12,7 @@ function handleSubmit(event) {
     postData("http://localhost:8081/article", { url: formText }).then(function (
       data
     ) {
-      document.getElementById("results").innerHTML = `text ${data.text}`;
+      document.getElementById("results").innerHTML = `model ${data.model}`;
       document.getElementById(
         "confidence"
       ).innerHTML = `Confidence ${data.confidence}`;
