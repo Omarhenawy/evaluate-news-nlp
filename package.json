@@ -1,6 +1,6 @@
 {
   "name": "evaluate-news-nlp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -10,10 +10,9 @@
   },
   "keywords": [],
   "author": "Omar Henawy",
-  "description": "evalute news nlp",
+  "description": "evalute news",
   "dependencies": {
     "axios": "^0.21.1",
-    "babel": "^6.23.0",
     "body-parser": "^1.19.0",
     "core-js": "^2.6.12",
     "cors": "^2.8.5",
@@ -28,11 +27,8 @@
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
     "@types/jest": "^26.0.20",
-    "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.1",
